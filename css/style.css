@@ -1,0 +1,50 @@
+html {
+  height: 100%;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: calc(0.8em + 0.5vmin);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.app {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.app > div {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+
+footer {
+    background-color: red;
+}
+
+header {
+    background-color: red;
+}
+
+svg {
+    width: 100%;
+    min-height: 370px !important;
+    border: solid 1px #ababab;
+}
+
+.flex-middle {
+    align-items: center;
+    justify-content: center;
+    padding: .75rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .app {
+        background-color: red;
+    }
+}
