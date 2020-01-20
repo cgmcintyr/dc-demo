@@ -18,17 +18,9 @@ body {
 }
 
 .app > div {
-    flex-grow: 1;
+    flex-grow: 0;
     flex-shrink: 1;
     flex-basis: auto;
-}
-
-footer {
-    background-color: red;
-}
-
-header {
-    background-color: red;
 }
 
 svg {
@@ -43,8 +35,33 @@ svg {
     padding: .75rem;
 }
 
+.no-top-margin {
+    margin-top: 0;
+}
+
 @media only screen and (max-width: 768px) {
     .app {
-        background-color: red;
+        font-size: calc(0.8em + 1vmin);
+    }
+
+    svg {
+        max-height: 40vh;
+        min-height: 25vh !important;
+    }
+
+    .column {
+        margin: 0px
+    }
+
+    .columns {
+        margin: 0px
+    }
+
+    .columns:not(:last-child) {
+        margin: 0px;
+    }
+
+    .textarea:not([rows]) {
+        min-height: 3em;
     }
 }
